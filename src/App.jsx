@@ -1,14 +1,16 @@
-import { Flex } from '@chakra-ui/react';
+import { Flex, Box } from '@chakra-ui/react';
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import NavComponent from './components/shared/NavComponent';
+import "./App.css"
 
 function App() {
   return (
     <Flex>
-      <Flex p="5" w="90%" m="auto">
+      <Box>
         <NavComponent />
-
-      </Flex>
+          <Outlet />
+      </Box>
     </Flex>
   );
 }

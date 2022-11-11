@@ -1,16 +1,15 @@
-import { Flex, Image, Button, Box, Spacer } from '@chakra-ui/react';
+import { Flex, Image, Button, Box} from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
 const NavComponent = () => {
   return (
-    <Flex justifyContent="space-between" alignItems="center" w="100%" mt="3">
+    <Flex justifyContent="space-between" alignItems="center" w="90%" mt="3" p="5" m="auto">
       <Flex>
         <Image src="assets/svg/NavBrand.svg" h="32px" w="188px" />
       </Flex>
       <Flex
         justifyContent="space-between"
         w="40%"
-        alignItems="center"
         fontSize="15px"
         fontWeight="400"
         lineHeight="25px"

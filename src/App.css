@@ -1,5 +1,5 @@
 @keyframes bounceFromBottom { 
-    0%, 20% {opacity: 1; transform: translateY(120px);} 
+    0%, 20% {opacity: 1; transform: translateY(80px);} 
     30% {opacity: 1; transform: translateY(105px);} 
     40% {opacity: 1; transform: translateY(95px);} 
     50% {opacity: 1; transform: translateY(80px);} 

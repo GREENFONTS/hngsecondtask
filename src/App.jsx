@@ -6,12 +6,10 @@ import "./App.css"
 
 function App() {
   return (
-    <Flex>
       <Box>
         <NavComponent />
           <Outlet />
       </Box>
-    </Flex>
   );
 }
 

@@ -5,17 +5,18 @@ const FirstDivider = () => {
   return (
     <Flex
       bg="linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)"
-      justifyContent="space-around"
+      justifyContent="center"
+      flexDirection="row"
       alignItems="center"
-      mt="40px"
-      h="60px"
+      h="70px"
       p="10px 100px"
+      gap="264px"
     >
-      <Image src="assets/svg/firstFooterIcon1.svg" />
+      <Image src="assets/svg/firstFooterIcon1.svg" w="222px" h="50px"/>
 
-      <Image src="assets/svg/firstFooterIcon2.svg" />
+      <Image src="assets/svg/firstFooterIcon2.svg" w="222px" h="50px"/>
 
-      <Image src="assets/svg/firstFooterIcon3.svg" />
+      <Image src="assets/svg/firstFooterIcon3.svg" w="222px" h="50px"/>
     </Flex>
   );
 };

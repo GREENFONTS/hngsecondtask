@@ -1,21 +1,22 @@
 import React from 'react';
 import { Flex, Image, Text, VStack } from '@chakra-ui/react';
 
-const NftCard = ({ image }) => {
+const NftCard = ({ image, stars }) => {
+
   return (
     <VStack
-      w="292px"
+      w={{md: "100%", lg:"292px"}}
       p="16px"
       h="372px"
       border="1px solid #D7D7D7"
       bg="#FFFFFF"
       borderRadius="15px"
-      spacing="16px"
+      spacing="14px"
       alignItems="normal"
     >
       <Image
         src={`assets/png/${image}`}
-        w="260px"
+        w={{md: "100%", lg:"292px"}}
         h="265px"
         borderRadius="15px"
       />
@@ -42,12 +43,9 @@ const NftCard = ({ image }) => {
       </Flex>
 
       <Flex w="92px" h="12px" alignItems="flex-start" p="0" gap="8px">
-        <Image src="assets/svg/Star 2.svg" h="12px" w="12px" />
-
-        <Image src="assets/svg/Star 2.svg" h="12px" w="12px" />
-        <Image src="assets/svg/Star 2.svg" h="12px" w="12px" />
-        <Image src="assets/svg/Star 2.svg" h="12px" w="12px" />
-        <Image src="assets/svg/Star 2.svg" h="12px" w="12px" />
+        {[...Array(stars)].map((e, i) => (
+          <Image src="assets/svg/Star 2.svg" h="12px" w="12px" key={i} />
+        ))}
       </Flex>
     </VStack>
   );

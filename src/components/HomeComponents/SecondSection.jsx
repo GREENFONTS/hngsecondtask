@@ -14,7 +14,7 @@ const SecondSection = () => {
     "Frame 151 (7).png"
   ];
   return (
-    <Box w="1240px" m="auto">
+    <Box w="1240px" h="963px" m="auto">
       <Heading
         mt="39px"
         textAlign="center"
@@ -27,9 +27,9 @@ const SecondSection = () => {
       </Heading>
 
       <Box h="368px" p="0" gap="24px" mt="50px">
-        <Grid templateColumns='repeat(4, 1fr)' gap="24px">
+        <Grid templateColumns={{md : 'repeat(2, 1fr)', lg:'repeat(4, 1fr)'}} gap="24px">
           {PicList.map((ele) => {
-            return <NftCard image={ele}/>
+            return <NftCard image={`Home/${ele}`} key={PicList.indexOf(ele)} stars={5}/>
           })}
         </Grid>
       </Box>

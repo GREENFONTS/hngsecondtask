@@ -13,8 +13,8 @@ import React from 'react';
 
 const FirstSection = () => {
   return (
-    <Box w="1221px" mt="216px" m="auto">
-      <Flex justifySelf="space-between" gap="80px" w="100%"  p="5" m="auto">
+    <Box w="1240px" m="43px 100px 0px" h="583px">
+      <Flex justifySelf="space-between" gap="80px" w="100%" p="5" m="auto">
         <Box w="646px" h="495px" mt="29.46px">
           <Heading
             fontSize="56px"
@@ -42,7 +42,7 @@ const FirstSection = () => {
             </Text>
           </Flex>
 
-          <Flex mt="48px">
+          <Flex mt={{ lg: '48px' }}>
             <Input
               placeholder="Search for location"
               w="390px"
@@ -71,17 +71,17 @@ const FirstSection = () => {
             </Button>
           </Flex>
         </Box>
-        <Flex w="476px" h="495px" gap="5px" animation="bounceFromBottom 0.3s">
+        <Flex w="476px" h="595px" gap="5px" animation="bounceFromBottom 0.3s">
           <VStack mt="99px">
-            <Image src="assets/png/image 4.png" h="176px" w="234px" />
+            <Image src="assets/png/Home/image 4.png" h="176px" w="234px" />
 
-            <Image src="assets/png/image 6.png" h="176px" w="234px" />
+            <Image src="assets/png/Home/image 6.png" h="176px" w="234px" />
           </VStack>
 
           <VStack>
-            <Image src="assets/png/image 3.png" h="176px" w="234px" />
+            <Image src="assets/png/Home/image 3.png" h="176px" w="234px" />
 
-            <Image src="assets/png/image 5.png" h="176px" w="234px" />
+            <Image src="assets/png/Home/image 5.png" h="176px" w="234px" />
           </VStack>
         </Flex>
       </Flex>

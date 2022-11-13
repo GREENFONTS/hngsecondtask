@@ -3,6 +3,7 @@ import React from 'react'
 import FirstDivider from '../components/HomeComponents/FirstDivider';
 import FirstSection from '../components/HomeComponents/FirstSection';
 import SecondSection from '../components/HomeComponents/SecondSection';
+import ThirdSection from '../components/HomeComponents/ThirdSection';
 
 const HomeComponent = () => {
   return (
@@ -10,6 +11,7 @@ const HomeComponent = () => {
         <FirstSection />
         <FirstDivider />
         <SecondSection />
+        <ThirdSection />
     </Box>
   )
 }

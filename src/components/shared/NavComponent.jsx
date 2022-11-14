@@ -6,18 +6,21 @@ import ConnectWallet from '../Modals/ConnectWallet';
 const NavComponent = () => {
   const [modalState, setModalState] = useState(false);
   return (
-    <Box w={{ lg: '86.1%' }} m={{ lg: '43px auto 0px' }}>
+    <Box
+      w={{ md: '90%', lg: '86.1%' }}
+      m={{ md: '25px auto 0px', lg: '43px auto 0px' }}
+    >
       <Flex justifyContent="space-between" alignItems="center" w="100%">
-        <Flex w={{ lg: '18.8%' }}>
+        <Flex w={{ md: '18.8%' }}>
           <Image src="assets/svg/NavBrand.svg" h="36.67px" />
         </Flex>
         <Flex
           w="50%"
-          fontSize={{ lg: '16px', xl: '20px' }}
+          fontSize={{ md: '13px', lg: '16px', xl: '20px' }}
           fontWeight="400"
           lineHeight="25px"
           color="#434343"
-          gap={{ lg: '34px', xl: '52px' }}
+          gap={{ md: '30px', lg: '34px', xl: '52px' }}
         >
           <Link to="/">Home</Link>
 
@@ -29,10 +32,10 @@ const NavComponent = () => {
         </Flex>
         <Button
           bg="linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)"
-          borderRadius="10px"
-          h={{lg : "40px", xl: "48px"}}
-          w={{ lg: '13.7%' }}
-          fontSize="12px"
+          borderRadius={{ md: '7px', lg: '10px' }}
+          h={{ md: '35px', lg: '40px', xl: '48px' }}
+          w={{ md: '13.7%' }}
+          fontSize={{ md: '10px', lg: '12px' }}
           lineHeight="20px"
           color="#FFFFFF"
           onClick={() => setModalState(true)}

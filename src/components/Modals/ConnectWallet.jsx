@@ -34,7 +34,7 @@ const ConnectWallet = ({ isOpen, setModalState }) => {
           >
             Connect Wallet
           </Text>
-          <Image src="assets/svg/CloseButton.svg"  onClick={() => setModalState(false)}/>
+          <Image src="assets/svg/CloseButton.svg"  onClick={() => setModalState(false)} cursor="pointer" />
         </Flex>
 
         <ModalBody p="32px">

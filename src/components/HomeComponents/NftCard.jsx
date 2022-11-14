@@ -5,18 +5,18 @@ const NftCard = ({ image, stars }) => {
   return (
     <VStack
       w={{ md: '100%' }}
-      p={{ lg: '10px', xl: '16px' }}
-      h={{ lg: '300px', xl: '372px' }}
+      p={{ md: '10px', xl: '16px' }}
+      h={{ md: '300px', xl: '372px' }}
       border="1px solid #D7D7D7"
       bg="#FFFFFF"
       borderRadius="15px"
-      spacing={{lg: "11px", xl:"14px"}}
+      spacing={{md: "11px", xl:"14px"}}
       alignItems="normal"
     >
       <Image
         src={`assets/png/${image}`}
         w={{ md: '100%', lg: '292px' }}
-        h={{ lg: '200px', xl: '265px' }}
+        h={{ md: '200px', xl: '265px' }}
         borderRadius="15px"
       />
 

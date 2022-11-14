@@ -8,26 +8,26 @@ const FirstDivider = () => {
       justifyContent="center"
       flexDirection="row"
       alignItems="center"
-      h="55px"
-      p="10px 100px"
-      gap={{ lg: '187px', xl: '264px' }}
+      h={{ md: '40px', lg: '55px' }}
+      p={{ md: '10px 60px', lg: '10px 100px' }}
+      gap={{ md: '140px', lg: '187px', xl: '264px' }}
     >
       <Image
         src="assets/svg/firstFooterIcon1.svg"
-        w={{ lg: '170px', xl: '222px' }}
-        h="50px"
+        w={{ md: '120px', lg: '170px', xl: '222px' }}
+        h={{ md: '30px', lg: '50px' }}
       />
 
       <Image
         src="assets/svg/firstFooterIcon2.svg"
-        w={{ lg: '160px', xl: '214,41px' }}
-        h="37.66px"
+        w={{ md: '115px', lg: '160px', xl: '214.41px' }}
+        h={{ md: '25px', lg: '37.66px' }}
       />
 
       <Image
         src="assets/svg/firstFooterIcon3.svg"
-        w={{ lg: '150px', xl: '198px' }}
-        h="40.76px"
+        w={{ md: '110px', lg: '150px', xl: '198px' }}
+        h={{ md: '25px', lg: '40.67px' }}
       />
     </Flex>
   );

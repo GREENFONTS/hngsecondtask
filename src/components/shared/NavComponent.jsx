@@ -39,6 +39,9 @@ const NavComponent = () => {
           lineHeight="20px"
           color="#FFFFFF"
           onClick={() => setModalState(true)}
+          _hover={{
+            bg: 'linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%)',
+          }}
         >
           Connect Wallet
         </Button>

@@ -19,7 +19,7 @@ const FirstSection = () => {
       h={{ md: '350px', lg: '450px', xl: '583px' }}
     >
       <Flex justifySelf="space-between" gap={{ md: '8%' }} w="100%" m="auto">
-        <Box w="52%" h="495px" mt={{ lg: '21.3px', xl: '29.46px' }}>
+        <Box w="52%" h="495px" mt={{md:"25px", lg: '21.3px', xl: '29.46px' }}>
           <Heading
             fontSize={{md:"30px", lg: '41px', xl: '50px', '2xl': '61px' }}
             lineHeight={{md:"120%", xl: '140%', '2xl': '130%' }}
@@ -40,7 +40,7 @@ const FirstSection = () => {
 
           <Flex mt={{md:"27px", lg: '34.1px', xl: '48px', '2xl': '40px' }}>
             <Text
-              fontSize={{md:"13px", lg: '18px', xl: '24px', '2xl': '26px' }}
+              fontSize={{md:"12.7px", lg: '18px', xl: '24px', '2xl': '26px' }}
               lineHeight={{md:"25px",lg:"35px"}}
             >
               we provide you access to luxury and affordable houses in the
@@ -56,7 +56,7 @@ const FirstSection = () => {
               borderRadius="8px 0px 0px 8px"
               border="1px solid #A3A3A3"
               fontSize={{md:"10px",lg:"14px"}}
-              height={{md:"40px",lg:"54px"}}
+              height={{md:"35px",lg:"54px"}}
               fontWeight="400"
               lineHeight="130%"
               color="#B8B8B8"
@@ -69,7 +69,7 @@ const FirstSection = () => {
               lineHeight="19px"
               textAlign="center"
               color="#FFFFFF"
-              height={{md:"40px",lg:"54px"}}
+              height={{md:"35px",lg:"54px"}}
               _hover={{
                 bg: 'linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%)',
               }}
@@ -84,16 +84,16 @@ const FirstSection = () => {
           gap="5px"
           animation="bounceFromBottom 0.3s"
         >
-          <VStack mt={{ lg: '71px', xl: '99px' }}>
+          <VStack mt={{md:"60px", lg: '71px', xl: '99px' }}>
             <Image
               src="assets/png/Home/image 4.png"
-              h={{md:"130px", lg: '155px', xl: '176px' }}
+              h={{md:"120px", lg: '155px', xl: '176px' }}
               w={{md:"150px", lg: '200px', xl: '234px' }}
             />
 
             <Image
               src="assets/png/Home/image 6.png"
-              h={{md:"130px", lg: '155px', xl: '176px' }}
+              h={{md:"120px", lg: '155px', xl: '176px' }}
               w={{md:"150px", lg: '200px', xl: '234px' }}
             />
           </VStack>
@@ -101,13 +101,13 @@ const FirstSection = () => {
           <VStack>
             <Image
               src="assets/png/Home/image 3.png"
-              h={{md:"130px", lg: '155px', xl: '176px' }}
+              h={{md:"120px", lg: '155px', xl: '176px' }}
               w={{md:"150px", lg: '200px', xl: '234px' }}
             />
 
             <Image
               src="assets/png/Home/image 5.png"
-              h={{md:"130px", lg: '155px', xl: '176px' }}
+              h={{md:"120px", lg: '155px', xl: '176px' }}
               w={{md:"150px", lg: '200px', xl: '234px' }}
             />
           </VStack>

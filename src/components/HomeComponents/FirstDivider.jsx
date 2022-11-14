@@ -7,16 +7,28 @@ const FirstDivider = () => {
       bg="linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)"
       justifyContent="center"
       flexDirection="row"
-      alignItems="flex-start"
-      h="70px"
+      alignItems="center"
+      h="55px"
       p="10px 100px"
-      gap="264px"
+      gap={{ lg: '187px', xl: '264px' }}
     >
-      <Image src="assets/svg/firstFooterIcon1.svg" w="222px" h="50px"/>
+      <Image
+        src="assets/svg/firstFooterIcon1.svg"
+        w={{ lg: '170px', xl: '222px' }}
+        h="50px"
+      />
 
-      <Image src="assets/svg/firstFooterIcon2.svg" w="214.41px" h="37.66px"/>
+      <Image
+        src="assets/svg/firstFooterIcon2.svg"
+        w={{ lg: '160px', xl: '214,41px' }}
+        h="37.66px"
+      />
 
-      <Image src="assets/svg/firstFooterIcon3.svg" w="198px" h="40.76px"/>
+      <Image
+        src="assets/svg/firstFooterIcon3.svg"
+        w={{ lg: '150px', xl: '198px' }}
+        h="40.76px"
+      />
     </Flex>
   );
 };

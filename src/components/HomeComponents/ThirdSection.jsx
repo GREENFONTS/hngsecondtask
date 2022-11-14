@@ -4,9 +4,9 @@ import React from 'react';
 const ThirdSection = () => {
   return (
     <Flex
-      h="774px"
+      h={{lg: "600px", xl:"774px"}}
       bg="linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)"
-      p="100px"
+      p={{lg: "72px", xl:"100px"}}
       justifyContent="space-between"
     >
       <VStack
@@ -17,20 +17,20 @@ const ThirdSection = () => {
         color="#FFFFFF"
       >
         <Heading
-          mt="86px"
-          w="346px"
+          mt={{lg: "62px", xl:"86px"}}
+          w={{lg: "300px", xl:"346px"}}
           fontWeight="700"
-          fontSize="48px"
+          fontSize={{lg: "40px", xl:"48px"}}
           lineHeight="60px"
         >
           Metabnb NFTs
         </Heading>
 
         <Text
-          w="415px"
+          w={{lg: "350px", xl:"415px"}}
           h="136px"
           fontWeight="400"
-          fontSize="18px"
+          fontSize={{lg: "15px", xl:"18px"}}
           lineHeight="35px"
         >
           Discover our NFT gift cards collection. Loyal customers gets amazing
@@ -40,9 +40,9 @@ const ThirdSection = () => {
 
         <Button
           borderRadius="8px"
-          w="156px"
+          w={{lg: "135px", xl:"156px"}}
           h="48px"
-          fontSize="16px"
+          fontSize={{lg: "14px", xl:"16px"}}
           fontWeight="400"
           lineHeight="19px"
           color="#A02279"
@@ -51,7 +51,7 @@ const ThirdSection = () => {
         </Button>
       </VStack>
 
-      <Flex >
+      <Flex>
         <Image src="assets/png/Home/Frame 59546.png" />
       </Flex>
     </Flex>

@@ -1,14 +1,14 @@
-import { Box, Flex, HStack, Image, Text} from '@chakra-ui/react';
+import { Box, Flex, HStack, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 
 const Footer = () => {
   return (
-    <Flex h="322px" bg="#1D1D1E">
-      <Box mt="58px" ml="113px">
-        <Image src="assets/svg/Group.svg" />
+    <Flex h={{ lg: '276px', xl: '322px' }} w="100%" bg="#1D1D1E">
+      <Box mt={{ lg: '42px', xl: '58px' }} ml={{ lg: '81px', xl: '113px' }}>
+        <Image src="assets/svg/Group.svg" w={{ lg: '170px', xl: '233px' }} />
 
-        <Box mt="96px">
-          <HStack gap="32px" h="18px">
+        <Box mt={{ lg: '80px', xl: '96px' }}>
+          <HStack gap={{ lg: '23px', xl: '32px' }} h="18px">
             <Image src="assets/svg/Vector.svg" />
 
             <Image src="assets/svg/Vector (1).svg" />
@@ -17,12 +17,12 @@ const Footer = () => {
           </HStack>
         </Box>
 
-        <Box mt="55px" ml="5px" w="159px">
+        <Box mt={{ lg: '45px', xl: '55px' }} ml="5px" w="159px">
           <HStack spacing="16px" p="0">
             <Image src="assets/svg/Vector (3).svg" />
             <Text
-              w="113px"
-              fontSize="16px"
+              w={{ lg: '85px', xl: '113px' }}
+              fontSize={{ lg: '12px', xl: '16px' }}
               lineHeight="16px"
               fontWeight="400"
               color="#F7F7F7"
@@ -40,20 +40,24 @@ const Footer = () => {
         justifyContent="center"
         alignItems="center"
         h="169px"
-        mt="63px"
+        mt={{ lg: '48px', xl: '63px' }}
         fontSize="14px"
         fontWeight="400"
         lineHeight="35px"
         color="#F1F3F9"
-        gap="217px"
-        w="698px"
-        ml="187px"
+        gap={{ lg: '155px', xl: '217px' }}
+        w={{ lg: '500px', xl: '698px' }}
+        ml={{lg: "140px",xl:"187px"}}
       >
-        <Box w="101px">
-          <Text fontSize="18px" fontWeight="700" lineHeight="22px">
+        <Box w={{ lg: '80px', xl: '101px' }}>
+          <Text
+            fontSize={{ lg: '14px', xl: '18px' }}
+            fontWeight="700"
+            lineHeight={{ lg: '16px', xl: '22px' }}
+          >
             Community
           </Text>
-          <Box mt="23px">
+          <Box mt={{ lg: '19px', xl: '23px' }}>
             <Text>NFT</Text>
             <Text>Tokens</Text>
             <Text>Landlords</Text>
@@ -61,11 +65,15 @@ const Footer = () => {
           </Box>
         </Box>
 
-        <Box w="84px">
-          <Text fontSize="18px" fontWeight="700" lineHeight="22px">
+        <Box w={{ lg: '90px'}}>
+          <Text
+            fontSize={{ lg: '14px', xl: '18px' }}
+            fontWeight="700"
+            lineHeight={{ lg: '16px', xl: '22px' }}
+          >
             Places
           </Text>
-          <Box mt="23px">
+          <Box w="inherit" mt={{ lg: '19px', xl: '23px' }}>
             <Text>Castle</Text>
             <Text>Farms</Text>
             <Text>Beach</Text>
@@ -73,11 +81,15 @@ const Footer = () => {
           </Box>
         </Box>
 
-        <Box w="79px">
-          <Text fontSize="18px" fontWeight="700" lineHeight="22px">
+        <Box w={{ lg: '79px' }}>
+          <Text
+            fontSize={{ lg: '14px', xl: '18px' }}
+            fontWeight="700"
+            lineHeight={{ lg: '16px', xl: '22px' }}
+          >
             About us
           </Text>
-          <Box mt="23px">
+          <Box w="inherit" mt={{ lg: '15px', xl: '23px' }}>
             <Text>Road Map</Text>
             <Text>Creators</Text>
             <Text>Career</Text>

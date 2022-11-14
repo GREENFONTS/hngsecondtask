@@ -4,8 +4,8 @@ const breakpoints = {
   base: '375px',
   md: '768px',
   lg: '960px',
-  xl: '1200px',
-  '2xl': '1390px',
+  xl: '1210px',
+  '2xl': '1450px',
 };
 
 const theme = extendTheme({

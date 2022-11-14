@@ -14,20 +14,20 @@ const SecondSection = () => {
     "Frame 151 (7).png"
   ];
   return (
-    <Box w="1240px" h="963px" m="auto">
+    <Box w={{lg: "90%", xl:"86.1%"}} h={{lg: "760px", xl:"963px"}} m="auto">
       <Heading
-        mt="39px"
+        mt={{lg: "30px", xl:"39px"}}
         textAlign="center"
         w="100%"
-        fontSize="48px"
+        fontSize={{lg: "35px", xl:"48px"}}
         lineHeight="60px"
         fontWeight="700"
       >
         Inspiration for your next adventure
       </Heading>
 
-      <Box h="368px" p="0" gap="24px" mt="50px">
-        <Grid templateColumns={{md : 'repeat(2, 1fr)', lg:'repeat(4, 1fr)'}} gap="24px">
+      <Box h="368px" p="0" gap="24px" mt={{lg: "35px", xl:"50px"}}>
+        <Grid templateColumns={{md : 'repeat(2, 1fr)', lg:'repeat(4, 1fr)'}} gap={{lg: "20px", xl:"24px"}}>
           {PicList.map((ele) => {
             return <NftCard image={`Home/${ele}`} key={PicList.indexOf(ele)} stars={5}/>
           })}

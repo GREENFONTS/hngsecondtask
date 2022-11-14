@@ -6,22 +6,18 @@ import ConnectWallet from '../Modals/ConnectWallet';
 const NavComponent = () => {
   const [modalState, setModalState] = useState(false);
   return (
-    <Box
-      w={{lg:'1240px', '2xl': "100%"}}
-      m={{lg:'43px 100px 0px', '2xl': "43px auto 0px"}}
-      p={{lg:"0px", '2xl': "0px 100px"}}
-    >
-      <Flex justifyContent="space-between" alignItems="center">
-        <Flex>
-          <Image src="assets/svg/NavBrand.svg" h="36.67px" w="233px" />
+    <Box w={{ lg: '86.1%' }} m={{ lg: '43px auto 0px' }}>
+      <Flex justifyContent="space-between" alignItems="center" w="100%">
+        <Flex w={{ lg: '18.8%' }}>
+          <Image src="assets/svg/NavBrand.svg" h="36.67px" />
         </Flex>
         <Flex
-          justifyContent="space-between"
-          w="40%"
-          fontSize="20px"
+          w="50%"
+          fontSize={{ lg: '16px', xl: '20px' }}
           fontWeight="400"
           lineHeight="25px"
           color="#434343"
+          gap={{ lg: '34px', xl: '52px' }}
         >
           <Link to="/">Home</Link>
 
@@ -31,21 +27,18 @@ const NavComponent = () => {
 
           <Link to="/">Community</Link>
         </Flex>
-
-        <Box>
-          <Button
-            bg="linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)"
-            borderRadius="10px"
-            w="170px"
-            h="48px"
-            fontSize="15px"
-            lineHeight="20px"
-            color="#FFFFFF"
-            onClick={() => setModalState(true)}
-          >
-            Connect Wallet
-          </Button>
-        </Box>
+        <Button
+          bg="linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)"
+          borderRadius="10px"
+          h={{lg : "40px", xl: "48px"}}
+          w={{ lg: '13.7%' }}
+          fontSize="12px"
+          lineHeight="20px"
+          color="#FFFFFF"
+          onClick={() => setModalState(true)}
+        >
+          Connect Wallet
+        </Button>
       </Flex>
 
       <ConnectWallet isOpen={modalState} setModalState={setModalState} />

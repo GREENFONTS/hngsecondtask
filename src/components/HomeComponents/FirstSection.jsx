@@ -120,7 +120,7 @@ const FirstSection = () => {
           mt={{ base: '20px', sm: '0px' }}
           gap="5px"
           animation="bounceFromBottom 0.3s"
-          display={{base:"none", sm:"block"}}
+          display={{ base: 'none', sm: 'flex' }}
         >
           <VStack
             mt={{

@@ -25,12 +25,13 @@ const PlaceToStay = () => {
   return (
     <Box
       w={{ base: '90%', lg: '86.1%' }}
-      m={{base:"10px auto 20px", sm: '10px auto 40px', lg: '23px auto 40px' }}
+      m={{ base: '10px auto 20px', sm: '10px auto 40px', lg: '23px auto 40px' }}
+      h="calc(100vh-350px)"
     >
       <Flex
         justifyContent="space-between"
         alignItems="center"
-        w={{base: '100%', md: '95%' }}
+        w={{ base: '100%', md: '95%' }}
         mt={{ base: '35px', md: '40px', lg: '70px', xl: '97px' }}
       >
         <Box
@@ -64,7 +65,12 @@ const PlaceToStay = () => {
           <Link to="/placetostay">Farm</Link>
         </Box>
 
-        <Select w="40%" h="40px" placeholder="Places" display={{base:"block", sm:"none"}}>
+        <Select
+          w="40%"
+          h="40px"
+          placeholder="Places"
+          display={{ base: 'block', sm: 'none' }}
+        >
           <option value="option1">Restaurant</option>
           <option value="option2">Cottage</option>
           <option value="option3">Castle</option>
@@ -76,8 +82,8 @@ const PlaceToStay = () => {
         </Select>
 
         <Flex
-          w={{ base: '30%', sm:"90px", md: '110px', lg: '130px', xl: '161px' }}
-          h={{base:"40px", sm: '30px', md: '35px', lg: '40px', xl: '48px' }}
+          w={{ base: '30%', sm: '90px', md: '110px', lg: '130px', xl: '161px' }}
+          h={{ base: '40px', sm: '30px', md: '35px', lg: '40px', xl: '48px' }}
           borderRadius="8px"
           border="1px solid #B4B4B4"
           justifyContent="space-around"

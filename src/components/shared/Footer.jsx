@@ -4,7 +4,6 @@ import React from 'react';
 const Footer = () => {
   return (
     <Flex
-      h={{base:"230px", sm: '220px', md: '260px', lg: '276px', xl: '322px' }}
       w="100%"
       bg="#1D1D1E"
     >
@@ -18,7 +17,7 @@ const Footer = () => {
         />
 
         <Box mt={{base:"40px",sm:"60px", md: '80px', xl: '96px' }}>
-          <HStack gap={{base:"14px",sm: '18px', lg: '23px', xl: '32px' }} h="18px">
+          <HStack gap={{base:"10px",sm: '18px', lg: '23px', xl: '32px' }} h="18px">
             <Image src="assets/svg/Vector.svg" />
 
             <Image src="assets/svg/Vector (1).svg" />
@@ -53,14 +52,14 @@ const Footer = () => {
         p="0"
         justifyContent="center"
         alignItems="center"
-        mt={{base:"0px",sm:"25px", md: '35px', lg: '48px', xl: '63px' }}
+        mt={{base:"20px",sm:"25px", md: '35px', lg: '48px', xl: '63px' }}
         fontSize={{base:"10px",sm:"11px", md: '12px', lg: '14px' }}
         fontWeight="400"
         lineHeight="35px"
         color="#F1F3F9"
         gap={{base:"20px",sm:'50px', md: '120px', lg: '155px', xl: '217px' }}
-        w={{sm:"375px", md: '400px', lg: '500px', xl: '698px' }}
-        ml={{base:"30px",sm:"80px", md: '110px', lg: '140px', xl: '187px' }}
+        w={{base:"400px", md: '400px', lg: '500px', xl: '698px' }}
+        ml={{base:"10px",sm:"80px", md: '110px', lg: '140px', xl: '187px' }}
       >
         <Box w={{sm: '70px', lg: '80px', xl: '101px' }}>
           <Text

@@ -96,7 +96,8 @@ const FirstSection = () => {
               height={{ base: '30px', md: '35px', lg: '54px' }}
               fontWeight="400"
               lineHeight="130%"
-              color="#B8B8B8"
+              color="#000000"
+              _placeholder={{color: "#B8B8B8"}}
             />
             <Button
               borderRadius="0px 8px 8px 0px"

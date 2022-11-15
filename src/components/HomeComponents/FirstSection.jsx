@@ -34,8 +34,7 @@ const FirstSection = () => {
               sm: '25px',
               md: '30px',
               lg: '38px',
-              xl: '48px',
-              '2xl': '57px',
+              xl: '56px',
             }}
             lineHeight={{
               base: '130%',
@@ -75,7 +74,7 @@ const FirstSection = () => {
                 sm: '11px',
                 md: '12.7px',
                 lg: '18px',
-                xl: '20px',
+                xl: '24px',
                 '2xl': '26px',
               }}
               lineHeight={{ base: '19px', d: '25px', lg: '35px' }}

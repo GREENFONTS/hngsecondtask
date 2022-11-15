@@ -42,7 +42,7 @@ const NavComponent = () => {
             borderRadius={{ base: '7px', lg: '10px' }}
             h={{ base: '30px', lg: '40px', xl: '48px' }}
             w={{ base: '60%', sm: '100%' }}
-            fontSize={{ base: '10px', lg: '12px' }}
+            fontSize={{ base: '10px', lg: '16px' }}
             lineHeight="20px"
             color="#FFFFFF"
             onClick={() => setModalState(true)}

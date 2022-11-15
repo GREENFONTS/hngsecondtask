@@ -5,24 +5,24 @@ const NftCard = ({ image, stars }) => {
   return (
     <VStack
       w={{ base: '100%' }}
-      p={{ base:"11px",sm: '9px', xl: '16px' }}
+      p={{ base: '11px', sm: '9px', xl: '16px' }}
       border="1px solid #D7D7D7"
       bg="#FFFFFF"
       borderRadius="15px"
-      spacing={{base: "11px", xl:"14px"}}
+      spacing={{ base: '11px', xl: '14px' }}
       alignItems="normal"
       justifyContent="center"
     >
       <Image
         src={`assets/png/${image}`}
-        w={{base:'100%', lg: '292px' }}
-        h={{base:"250px",sm: '190px', lg:"220px", xl: '265px' }}
+        w={{ base: '100%' }}
+        h={{ base: '100%' }}
         borderRadius="15px"
       />
 
       <Flex
         justifyContent="space-between"
-        fontSize={{sm:"11px",md:"10px", xl:"12px"}}
+        fontSize={{ base: '12px', md: '10px', xl: '12px' }}
         lineHeight="13px"
         color="#434343"
       >
@@ -32,7 +32,7 @@ const NftCard = ({ image, stars }) => {
 
       <Flex
         justifyContent="space-between"
-        fontSize={{sm:"11px",md:"10px", xl:"12px"}}
+        fontSize={{ base: '12px', sm: '11px', md: '10px', xl: '12px' }}
         lineHeight="13px"
         color="#434343"
         fontWeight="400"
@@ -41,9 +41,20 @@ const NftCard = ({ image, stars }) => {
         <Text>available for 2weeks stay</Text>
       </Flex>
 
-      <Flex w={{md:"60px", lg : "70px", xl: "92px"}} h="12px" alignItems="flex-start" p="0" gap="8px">
+      <Flex
+        w={{ md: '60px', lg: '70px', xl: '92px' }}
+        h="12px"
+        alignItems="flex-start"
+        p="0"
+        gap="8px"
+      >
         {[...Array(stars)].map((e, i) => (
-          <Image src="assets/svg/Star 2.svg" h={{md:"8px",lg : "9px", xl: "12px"}} w={{md:"8px",lg : "9px", xl: "12px"}} key={i} />
+          <Image
+            src="assets/svg/Star 2.svg"
+            h={{ md: '8px', lg: '9px', xl: '12px' }}
+            w={{ md: '8px', lg: '9px', xl: '12px' }}
+            key={i}
+          />
         ))}
       </Flex>
     </VStack>

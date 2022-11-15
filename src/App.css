@@ -9,3 +9,7 @@
     90% {opacity: 1;transform: translateY(20px);} 
     100% {opacity: 1; transform: translateY(0px);} 
  }
+
+ .chakra-ui-light{
+    margin-right: 0px !important;
+ }

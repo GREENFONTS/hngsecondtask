@@ -5,6 +5,7 @@ import { RouterProvider } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 import theme from './styles/Theme';
+import './App.css';
 
 import '@fontsource/red-rose/400.css';
 import '@fontsource/red-rose/700.css';

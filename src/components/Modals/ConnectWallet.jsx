@@ -16,7 +16,7 @@ const ConnectWallet = ({ isOpen, setModalState }) => {
   const { onClose } = useDisclosure();
   return (
     <Modal isOpen={isOpen} size="100%" onClose={onClose} isCentered>
-      <ModalOverlay opacity="1" h="100vh" w="100%"/>
+      <ModalOverlay h="100vh" w="100%"/>
       <ModalContent
         w={{base:"90%", sm: '80%', md: '55%', xl: '42%' }}
         h="fit-content"

@@ -9,7 +9,6 @@ import {
   Flex,
   LinkBox,
   HStack,
-  Text,
   useDisclosure,
   Divider,
   Image,

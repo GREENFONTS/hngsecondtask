@@ -1,4 +1,4 @@
-import { Flex, Image, Button, Box, Icon } from '@chakra-ui/react';
+import { Flex, Image, Button, Icon } from '@chakra-ui/react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ConnectWallet from '../Modals/ConnectWallet';

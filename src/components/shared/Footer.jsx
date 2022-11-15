@@ -9,7 +9,7 @@ const Footer = () => {
     >
       <Box
         mt={{ base: '32px', md: '35px', lg: '42px', xl: '58px' }}
-        ml={{base:"20px", sm: '65px', lg: '81px', xl: '113px' }}
+        ml={{base:"15px", sm: '65px', lg: '81px', xl: '113px' }}
       >
         <Image
           src="assets/svg/Group.svg"

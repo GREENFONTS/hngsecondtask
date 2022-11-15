@@ -15,32 +15,40 @@ import React from 'react';
 const ConnectWallet = ({ isOpen, setModalState }) => {
   const { onClose } = useDisclosure();
   return (
-    <Modal isOpen={isOpen} size="1440px" onClose={onClose} isCentered>
-      <ModalOverlay h="1021px" />
-      <ModalContent w="600px" h="326px" borderRadius="16px">
+    <Modal isOpen={isOpen} size="100%" onClose={onClose} isCentered>
+      <ModalOverlay h={{sm:"800px",lg:"1021px"}} />
+      <ModalContent
+        w={{base:"90%", sm: '80%', md: '55%', xl: '42%' }}
+        h="fit-content"
+        borderRadius="16px"
+        p={{base:"2"}}
+      >
         <Flex
-          p="24px 32px"
-          h="78px"
+          p={{base:"15px", sm: '15px 20px', md: '24px 27px', lg: '24px 32px' }}
+          h={{ sm: '60px', lg: '78px' }}
           justifyContent="space-between"
           alignItems="center"
           borderBottom="1px solid #CFD8DC"
         >
           <Text
-            fontSize="24px"
+            fontSize={{base:"18px", sm: '20px', lg: '24px' }}
             lineHeight="30px"
-            w="182px"
             fontWeight="700"
             color="#333333"
           >
             Connect Wallet
           </Text>
-          <Image src="assets/svg/CloseButton.svg"  onClick={() => setModalState(false)} cursor="pointer" />
+          <Image
+            src="assets/svg/CloseButton.svg"
+            onClick={() => setModalState(false)}
+            cursor="pointer"
+          />
         </Flex>
 
-        <ModalBody p="32px">
-          <VStack spacing="16px" alignItems="flex-start">
+        <ModalBody p={{base:"16px", sm: '20px', lg: '32px' }}>
+          <VStack spacing={{base:"12px",sm:"16px"}} alignItems="flex-start">
             <Text
-              fontSize="16px"
+              fontSize={{base:"14px",sm:"16px"}}
               lineHeight="20px"
               fontWeight="400"
               color="#333333"
@@ -50,9 +58,9 @@ const ConnectWallet = ({ isOpen, setModalState }) => {
             <Box
               display="flex"
               flexDirection="row"
-              p="12px 20px"
-              w="536px"
-              h="68px"
+              p={{base:"7px 9px", sm: '10px 16px', lg: '12px 20px' }}
+              h={{base:"55px", sm: '65px', lg: '68px' }}
+              w="100%"
               borderRadius="16px"
               border="1px solid #CFD8DC"
               bg="#F8F9FA"
@@ -62,7 +70,7 @@ const ConnectWallet = ({ isOpen, setModalState }) => {
               <Flex justifyContent="center" gap="16px" alignItems="center">
                 <Image src="assets/svg/Metamask.svg" />
                 <Text
-                  fontSize="18px"
+                  fontSize={{base:"13px",sm:"16px"}}
                   lineHeight="23px"
                   fontWeight="600"
                   color="#000000"
@@ -77,9 +85,9 @@ const ConnectWallet = ({ isOpen, setModalState }) => {
             <Box
               display="flex"
               flexDirection="row"
-              p="12px 20px"
-              w="536px"
-              h="68px"
+              p={{base:"7px 9px", sm: '10px 16px', lg: '12px 20px' }}
+              h={{base:"55px", sm: '65px', lg: '68px' }}
+              w="100%"
               borderRadius="16px"
               border="1px solid #CFD8DC"
               justifyContent="space-between"
@@ -88,7 +96,7 @@ const ConnectWallet = ({ isOpen, setModalState }) => {
               <Flex justifyContent="center" gap="16px" alignItems="center">
                 <Image src="assets/svg/WalletConnect.svg" />
                 <Text
-                  fontSize="18px"
+                  fontSize={{base:"13px",sm:"16px"}}
                   lineHeight="23px"
                   fontWeight="600"
                   color="#000000"

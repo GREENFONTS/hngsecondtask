@@ -1,9 +1,7 @@
-import { Box, Flex, Image, Text, Grid, Icon } from '@chakra-ui/react';
-import React, { useState, useEffect } from 'react';
+import { Box, Flex, Image, Text, Grid, Select } from '@chakra-ui/react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import NftCard from '../components/HomeComponents/NftCard';
-
-import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
 const PlaceToStay = () => {
   const PicList = [
@@ -24,67 +22,30 @@ const PlaceToStay = () => {
     'Frame 151 (14).png',
     'Frame 151 (15).png',
   ];
-
-  const pageSize = 4;
-  let defaultItems = PicList.slice(0, pageSize);
-
-  const [prevDisabled, setPrevDisabled] = useState(true);
-  const [nextDisabled, setNextDisabled] = useState(false);
-  const [Page, setPage] = useState(1);
-  const [items, setItems] = useState(defaultItems);
-
-  const PrevHandler = () => {
-    if (Page * pageSize - 1 < pageSize) {
-      return;
-    } else {
-      setItems(PicList.slice((Page - 2) * pageSize, (Page - 1) * pageSize));
-      setPage(Page - 1);
-    }
-  };
-
-  const NextHandler = () => {
-    if (Page * pageSize >= PicList.length) {
-      return;
-    } else {
-      setItems(PicList.slice(Page * pageSize, (Page + 1) * pageSize));
-      setPage(Page + 1);
-    }
-  };
-
-  useEffect(() => {
-    if (Page * pageSize - 1 < pageSize) {
-      setPrevDisabled(true);
-    } else {
-      setPrevDisabled(false);
-    }
-
-    if (Page * pageSize >= PicList.length) {
-      setNextDisabled(true);
-    } else {
-      setNextDisabled(false);
-    }
-  }, [Page]);
-
   return (
     <Box
-      w={{ md: '90%', lg: '86.1%' }}
-      h={{ md: '830px', lg: '1480px', xl: '1879px' }}
-      m={{ md: '10px auto 0px', lg: '43px auto 0px' }}
+      w={{ base: '90%', lg: '86.1%' }}
+      m={{base:"10px auto 20px", sm: '10px auto 40px', lg: '23px auto 40px' }}
     >
-      <Flex justifyContent="space-between" alignItems="center">
+      <Flex
+        justifyContent="space-between"
+        alignItems="center"
+        w={{base: '100%', md: '95%' }}
+        mt={{ base: '35px', md: '40px', lg: '70px', xl: '97px' }}
+      >
         <Box
-          display="flex"
+          mt="0px"
+          display={{ base: 'none', sm: 'flex' }}
           flexDirection="row"
           alignItems="center"
           justifyContent="center"
           p="0px"
-          gap={{ md: '20px', lg: '35px', xl: '48px' }}
-          h="23px"
-          mt={{ md: '40px', lg: '91px', xl: '127px' }}
+          gap={{ sm: '10px', md: '20px', lg: '35px', xl: '48px' }}
+          h={{ sm: '23px' }}
           lineHeight="25px"
           fontWeight="400"
           color="#434343"
-          fontSize={{ md: '12px', lg: '13px', xl: '18px' }}
+          fontSize={{ sm: '11px', md: '12px', lg: '13px', xl: '17px' }}
         >
           <Link to="/placetostay">Restaurant</Link>
 
@@ -101,40 +62,48 @@ const PlaceToStay = () => {
           <Link to="/placetostay">Off-grid</Link>
 
           <Link to="/placetostay">Farm</Link>
-
-          <Flex
-            w={{ md: '110px', lg: '130px', xl: '161px' }}
-            h={{ md: '35px', lg: '40px', xl: '48px' }}
-            borderRadius="8px"
-            border="1px solid #B4B4B4"
-            justifyContent="space-around"
-            alignItems="center"
-          >
-            <Text
-              fontWeight="400"
-              fontSize={{ md: '12px', lg: '14px', xl: '16px' }}
-              lineHeight="19px"
-            >
-              Location
-            </Text>
-            <Image
-              src="assets/svg/settings.svg"
-              h={{ md: '14px', lg: '17px', xl: '24px' }}
-              w={{ md: '14px', lg: '17px', xl: '24px' }}
-            />
-          </Flex>
         </Box>
+
+        <Select w="40%" h="40px" placeholder="Places" display={{base:"block", sm:"none"}}>
+          <option value="option1">Restaurant</option>
+          <option value="option2">Cottage</option>
+          <option value="option3">Castle</option>
+          <option value="option3">fantasy city</option>
+          <option value="option3">bench</option>
+          <option value="option3">Carbins</option>
+          <option value="option3">Off-grid</option>
+          <option value="option3">Farm</option>
+        </Select>
+
+        <Flex
+          w={{ base: '30%', sm:"90px", md: '110px', lg: '130px', xl: '161px' }}
+          h={{base:"40px", sm: '30px', md: '35px', lg: '40px', xl: '48px' }}
+          borderRadius="8px"
+          border="1px solid #B4B4B4"
+          justifyContent="space-around"
+          alignItems="center"
+        >
+          <Text
+            fontWeight="400"
+            fontSize={{ base: '11px', md: '12px', lg: '14px', xl: '16px' }}
+            lineHeight="19px"
+          >
+            Location
+          </Text>
+          <Image
+            src="assets/svg/settings.svg"
+            h={{ base: '15px', md: '14px', lg: '17px', xl: '24px' }}
+            w={{ base: '15px', md: '14px', lg: '17px', xl: '24px' }}
+          />
+        </Flex>
       </Flex>
 
-      <Box
-        mt={{ md: '40px', lg: '55px', xl: '71px' }}
-        h={{ md: '630px', lg: '1200px', xl: '1560px' }}
-      >
+      <Box mt={{ base: '30px', md: '40px', lg: '55px', xl: '61px' }}>
         <Grid
-          templateColumns={{ md: 'repeat(2, 1fr)', lg: 'repeat(4, 1fr)' }}
-          gap={{ md: '15px', lg: '20px', xl: '24px' }}
+          templateColumns={{ sm: 'repeat(2, 1fr)', md: 'repeat(4, 1fr)' }}
+          gap={{ base: '10px', md: '15px', lg: '20px', xl: '24px' }}
         >
-          {items.map(ele => {
+          {PicList.map(ele => {
             return (
               <NftCard
                 image={`Place_to_stay/${ele}`}
@@ -144,59 +113,6 @@ const PlaceToStay = () => {
             );
           })}
         </Grid>
-      </Box>
-
-      <Box
-        mt="5"
-        display={{ md: 'flex', lg: 'none' }}
-        flexDirection="row"
-        w="40%"
-        justifyContent="space-between"
-        alignItems="flex-end"
-        float="right"
-      >
-        <Flex
-          color="white"
-          borderRadius="8px"
-          w="35%"
-          bg={
-            prevDisabled
-              ? 'gray.200'
-              : 'linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)'
-          }
-          _focus={{
-            bg: 'linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)',
-          }}
-          justifyContent="space-between"
-          alignItems="center"
-          p="10px 15px"
-          cursor="pointer"
-          onClick={() => PrevHandler()}
-        >
-          <Icon as={MdChevronLeft} fontSize="20px" />
-          <Text>Prev</Text>
-        </Flex>
-        <Flex
-          color="white"
-          borderRadius="8px"
-          w="35%"
-          cursor="pointer"
-          bg={
-            nextDisabled
-              ? 'gray.200'
-              : 'linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)'
-          }
-          _focus={{
-            bg: 'linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)',
-          }}
-          justifyContent="space-between"
-          alignItems="center"
-          p="10px 15px"
-          onClick={() => NextHandler()}
-        >
-          <Text>Next</Text>
-          <Icon as={MdChevronRight} fontSize="20px" />
-        </Flex>
       </Box>
     </Box>
   );

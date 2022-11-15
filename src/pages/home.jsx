@@ -7,7 +7,7 @@ import ThirdSection from '../components/HomeComponents/ThirdSection';
 
 const HomeComponent = () => {
   return (
-    <Flex mt={{md: "60px",lg:"70px"}} w="100%">
+    <Flex mt={{base:"30px",sm:"45px", md:"60px",lg:"70px"}} w="100%" p="0">
       <Box w="100%">
         <FirstSection />
         <FirstDivider />

@@ -15,7 +15,7 @@ const FirstSection = () => {
   return (
     <Box
       w={{ base: '90%', lg: '86.1%' }}
-      m={{ base: '10px auto 20px', sm: '10px auto 40px', lg: '43px auto 40px' }}
+      m={{ base: '10px auto 30px', sm: '10px auto 40px', lg: '43px auto 40px' }}
     >
       <Flex
         justifySelf="space-between"
@@ -120,6 +120,7 @@ const FirstSection = () => {
           mt={{ base: '20px', sm: '0px' }}
           gap="5px"
           animation="bounceFromBottom 0.3s"
+          display={{base:"none", sm:"block"}}
         >
           <VStack
             mt={{

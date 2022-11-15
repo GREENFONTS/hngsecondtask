@@ -50,7 +50,7 @@ const ThirdSection = () => {
         </Button>
       </VStack>
 
-      <Flex mt={{base:"20px", sm:"0px"}}>
+      <Flex mt={{base:"20px", sm:"0px"}} display={{base:"none", sm:"block"}}>
         <Image src="assets/png/Home/Frame 59546.png" />
       </Flex>
     </Flex>
